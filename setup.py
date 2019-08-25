@@ -13,11 +13,11 @@ neoscrypt_module = Extension('neoscrypt',
                                include_dirs=['.'])
 
 setup (name = 'neoscrypt_python',
-       version = '1.0',
+       version = '1.0.1',
        license = 'MIT',
        description = 'Bindings for the NeoScrypt proof-of-work algorithm',
        author = 'Autonomous Worlds Ltd',
        author_email = 'info@autonomousworlds.com',
        url = 'https://github.com/xaya/neoscrypt_python',
-       download_url = 'https://github.com/xaya/neoscrypt_python/archive/v1.0.tar.gz',
+       download_url = 'https://github.com/xaya/neoscrypt_python/archive/v1.0.1.tar.gz',
        ext_modules = [neoscrypt_module])

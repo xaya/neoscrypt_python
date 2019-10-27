@@ -4,7 +4,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
 
 neoscrypt_module = Extension('neoscrypt',
                                sources = ['neoscryptmodule.c',
@@ -12,7 +12,7 @@ neoscrypt_module = Extension('neoscrypt',
                                include_dirs=['.'])
 
 setup (name = 'neoscrypt_python',
-       version = '1.0.2',
+       version = '1.0.3',
        license = 'MIT',
        description = 'Bindings for the NeoScrypt proof-of-work algorithm',
        author = 'Autonomous Worlds Ltd',

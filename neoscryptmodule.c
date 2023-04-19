@@ -1,4 +1,4 @@
-// Copyright (C) 2019 The Xaya developers
+// Copyright (C) 2019-2023 The Xaya developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -21,7 +21,7 @@ static PyObject *neoscrypt_gost_getpowhash(PyObject *self, PyObject *args)
     output = PyMem_Malloc(32);
 
 #if PY_MAJOR_VERSION >= 3
-    neoscrypt((const unsigned char *)PyBytes_AsString((PyObject*) input), output);
+    neoscrypt((const unsigned char *)PyBytes_AsString((PyObject*) input), output, 0);
 #else
     neoscrypt((const unsigned char *)PyString_AsString((PyObject*) input), output);
 #endif

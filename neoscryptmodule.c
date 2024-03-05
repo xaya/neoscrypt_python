@@ -2,6 +2,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+#define PY_SSIZE_T_CLEAN
 #include <Python.h>
 
 #include "neoscrypt.h"

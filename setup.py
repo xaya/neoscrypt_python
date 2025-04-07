@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Copyright (C) 2019-2023 The Xaya developers
+# Copyright (C) 2019-2025 The Xaya developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +12,7 @@ neoscrypt_module = Extension('neoscrypt',
                                include_dirs=['.'])
 
 setup (name = 'neoscrypt_python',
-       version = '1.0.4',
+       version = '1.0.5',
        license = 'MIT',
        description = 'Bindings for the NeoScrypt proof-of-work algorithm',
        author = 'Autonomous Worlds Ltd',
